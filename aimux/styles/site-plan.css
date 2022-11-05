@@ -26,18 +26,6 @@ Fonts are separated by a | */
   --nav-hover-background-color: #055E8A;
 }
 
-img.home_image {
-  width: 500px;
-}
-
-img.about_me_image {
-  width: 500px;
-}
-
-img.services_image {
-  width: 500px;
-}
-
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
@@ -50,6 +38,7 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  width: 50%;
 }
 
 h1, h2, h3, h4, h5, h6 {
