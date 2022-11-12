@@ -1,0 +1,454 @@
+#content {
+    max-width: 1600px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #FEFAE0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: hsla(120, 100%, 25%, 0.3);
+    text-align: left;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+    text-shadow: -1px 1px 2px black,
+    1px 1px 2px black,
+    1px -1px 0 black,
+    -1px -1px 0 black;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #BC6C25;
+    font-weight: bold;
+}
+
+section, button {
+    text-align: center;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg h1, #hero-msg h4, .button-box, main section {
+    text-align: center;
+    margin: .5em;
+}
+
+#hero-msg h4 {
+    color: white;
+	text-shadow: -1px 1px 2px black,
+				  1px 1px 2px black,
+				  1px -1px 0 black,
+				  -1px -1px 0 black;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+.home-title {
+    font-family: 'Water Brush', cursive, serif;
+    color: white;
+    font-size: 3em;
+    margin-top: 10px;
+	text-shadow: -1px 1px 2px black,
+				  1px 1px 2px black,
+				  1px -1px 0 black,
+				  -1px -1px 0 black;
+}
+
+h2 {
+    margin: 0;
+}     
+
+h4 {
+    color: black;
+}
+
+.book {
+    background-color: #DDA15E;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.join {
+    background-color: #DDA15E;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.book:hover {
+    background-color: #BC6C25;
+    color: white;
+}
+
+.join:hover {
+    background-color: #BC6C25;
+    color: white;
+}
+
+.msg {
+    background-color: #6f7364;
+    line-height: 1.5em;
+    color: white;
+    padding: 35px;
+    margin-top: 200px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg h2 {
+    color: white;
+}
+
+.msg p {
+    color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo, .icon {
+    width: 80px;
+}
+
+.icon {
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Rivers Section - Start */
+
+#rivers-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#river-title {
+    margin: 3em 1em 1em 1em;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.salmon-title, .desolation-title, .canyon-title {
+    font-weight: bold;
+}
+
+.salmon-title, .canyon-title {
+    text-align: left;
+}
+
+.desolation-title {
+    text-align: right;
+}
+
+.salmon-text, .canyon-text {
+    text-align: left;
+    font-size: 1em;
+}
+
+.desolation-text {
+    text-align: right;
+    font-size: 1em;
+}
+
+.salmon-card, .desolation-card, .canyon-card { 
+    margin-bottom: 3em;
+}
+
+.salmon-img, .desolation-img, .canyon-img {
+    border: 10px solid #DDA15E;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #283618;
+    width: 40%;  
+    margin: 2em;
+    margin-top: 0;
+}
+
+.salmon-img {
+    grid-row: 1/2;
+    float: left; 
+}
+
+.desolation-img {
+    grid-row: 2/3;
+    float: right;
+}
+
+.canyon-img {
+    grid-row: 3/4;
+    float: left;
+}
+
+.salmon-img:hover, .desolation-img:hover, .canyon-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+/* Rivers Section - End */
+
+
+
+/* FAQ Section - Start */
+
+#faq-grid {
+    background-color: #606C38;
+    color: white;
+    padding-bottom: 2em;
+}
+
+.faq-title {
+    margin: 3em 1em 1em 1em;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 2em;
+}
+
+p {
+    margin: 2em;
+    text-align: left;
+}
+
+p.question {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1em;
+    margin: 3em 2em 1em 2em
+}
+
+p.answer {
+    margin: 1em 2em 1em 4em;
+    font-size: 1em;
+}
+
+/* FAQ Section - End */
+
+
+/* Blog Section - Start */
+#blog {
+    background-color: #DDA15E;
+    padding: 2em;
+}
+
+.blog-title {
+    margin: 2em 1em 1em 1em;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+  
+.blog-text {
+    font-size: 3rem;
+    line-height: 1.5;
+    color: white;
+}
+  
+.blog-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+  
+/* Blog Section - End */
+
+
+/* Rates/Dates Section - Start */
+
+.rate-title {
+    margin: 3em 1em 1em 1em;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.rate-note {
+    text-align: center;
+}
+
+.price-title {
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.rate-text {
+    text-align: left;
+    margin-left: 2.5em;
+    font-size: 1em;
+}
+
+/* Rates/Dates Section - End */
+
+
+/* Contact Us - Start */
+
+#contact-us-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+}
+
+.contact-title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 2em 1em;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#contact-img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    opacity: 25%;
+}
+
+.contact-box {
+    background-color: #DDA15E;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    width: 90%;
+    height: 60%;
+    margin: 3em auto;
+    margin-top: 10em;
+    z-index: 1;
+}
+
+.contact-location, .contact-email, .contact-number {
+    text-align: left;
+    margin: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+/* Contact Us - End */
+
+
+/* Footer Section - Start */
+
+footer {
+    text-align: left;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.msg, footer {
+    background-color: #606C38;
+}
+
+footer a {
+    color: #FEFAE0;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FEFAE0;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+
+/* Footer Section - End */
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .salmon-card, .desolation-card, .canyon-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
