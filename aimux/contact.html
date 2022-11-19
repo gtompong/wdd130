@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Start Font Awesome CSS -->     
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6b2cc253a9.js" crossorigin="anonymous"></script>
+    
+      
+    <!-- Custom CSS -->
+    <style>
+        #abovethefold {
+            height: 100vh;
+            width: 100%;
+            background: url("images/main5.jpg") no-repeat center/ cover;
+        }
+        
+        header {
+            position: absolute;
+        }
+        
+        hr {
+            width: 75px;
+        }
+        
+        @media (max-width: 768px) { 
+            .navbar {
+                background-color: white!important;
+            }
+            .navbar-brand, .nav-link {
+                color: black!important;
+            }
+        }
+    </style>  
+    <!-- End of Custom CSS -->         
+  </head>
+
+  <body>    
+    <!-- Star of Navigation Header -->
+    <header class="container-fluid px-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent container col-12 px-5">
+        <img class="logo" src="images/AimUX.png" alt="AimUX Logo">
+        <a class="navbar-brand text-white" href="#" target="_blank" >Contact Us</a>
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-uppercase text-white" href="index.html" target="_blank">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase text-white" href="about.html" target="_blank">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase text-white" href="contact.html" target="_blank">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+      </header>
+    <!-- End of Navigation Header -->
+    
+    <!-- Start of Main Background Image -->
+    <main id="abovethefold" class="container-fluid">
+          <div class="row align-items-center text-center h-100">
+            <div class="col">
+                <h3 class="text-white">| Contact Us |</h3>
+                <h1 class="text-uppercase text-white">Let's have a talk</h1>
+                <hr class="border border-primary">
+                <p class="text-white w-50 mx-auto">"Share your excitement with us."</p>
+            </div>
+          </div>
+        </main>
+    <!-- End of Main Background Image --> 
+      
+    <div id="feedback">
+      <form action="/my-handling-form-page" method="post">
+          <ul>
+              <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button">
+              <button type="submit">Send your message</button>
+              </li>
+          </ul>
+      </form>
+    </div>
+      
+    <!-- Start of Footer contact CTA -->
+    <footer id="contact" class="container-footer">
+        <div class="row text-center py-5"> <!-- 1 row is equal to 12 columns -->
+            <div class="col-sm-4">
+              <a class="footer-icon" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
+              <a class="footer-icon" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+              <a class="footer-icon" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+              <p class="footer-text">&copy; 2022 | All rights reserved | Glenn Tompong</p>
+            </div>
+        </div>      
+    </footer>
+    <!-- End of Foter contact CTA -->
+
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById('feedback');
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener('submit', function(e) {
+          // stop the form from doing the default action.
+          e.preventDefault();
+          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+          feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+          // make the feedback element visible.
+          feedbackElement.style.display = "block";
+          // add a class to move everything down so our message doesn't cover it.
+          document.body.classList.toggle('moveDown');
+      });
+    </script>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
