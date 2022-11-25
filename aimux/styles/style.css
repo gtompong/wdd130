@@ -12,7 +12,11 @@
 }
 
 .container-pre-footer {
-    background-color: #FB8500;
+    background-color: white;
+}
+
+.cta-text {
+  color: #0069D9;
 }
 
 .my-pic {
@@ -28,6 +32,52 @@
     text-align: center;
 }
 
+/* Testimonial Section */
+#testimonials {
+  background-color: #FB8500;
+  text-align: center;
+  padding-top: 4em;
+}
+
+.testimonial-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #FB8500;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+#press {
+  text-align: center;
+  background-color: #FB8500;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+
+/* About Me */
+.gallery-sub-title {
+  text-align: center;
+  color: #FB8500;
+}
 
 
 /* Footer - Start */
@@ -46,6 +96,17 @@
     color: #DEF0F8;
     margin-left: 2em;
 }
+
+.site-plan {
+  color: #DEF0F8;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.site-plan:hover {
+  color: #FFB703;
+}
+
 
 /* Footer - End */
 
