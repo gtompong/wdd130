@@ -1,3 +1,11 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Cinzel', serif;
+}
+
 .logo {
     width: 60px;
     margin: 1em;
@@ -76,8 +84,15 @@
 /* About Me */
 .gallery-sub-title {
   text-align: center;
+  font-weight: bold;
   color: #FB8500;
+  margin-bottom: 3em;
 }
+
+.row img {
+  align-items: center;
+}
+
 
 
 /* Footer - Start */
