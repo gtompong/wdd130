@@ -220,3 +220,119 @@ form {
   }
 
   /* Form - End */
+
+/* Slide Show - About */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.slideshow-gallery {
+  background-color: #DEF0F8;
+}
+
+.slideshow-gallery h2 {
+  font-family: 'Cinzel', serif;
+  color: #FB8500;
+  padding-top: 2em;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  background-color: #FFB703;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #FFB703;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+  left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #FFB703;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #FFB703;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #DEF0F8;
+  padding: 2px 16px;
+  color: #FB8500;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
