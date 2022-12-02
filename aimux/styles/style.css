@@ -40,6 +40,27 @@ h1, h2 {
     text-align: center;
 }
 
+/* Header */
+
+header {
+  position: absolute;
+}
+
+hr {
+  width: 75px;
+}
+
+@media (max-width: 768px) { 
+  .navbar {
+      background-color: white!important;
+  }
+  .navbar-brand, .nav-link {
+      color: black!important;
+  }
+}
+
+
+
 /* Testimonial Section */
 #testimonials {
   background-color: #FB8500;
